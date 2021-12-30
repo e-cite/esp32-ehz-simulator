@@ -9,3 +9,9 @@ Smart-Meter SML Messages genutzt werden.
 Die Demo-Message `esp32-ehz-simulator/demo.h` ist eine selbst
 aufgezeichnete SML message, in der Teile der Zählernummer
 (Geräteidentifikation) durch `0x11` ersetzt wurde.
+
+## Unterstützung für Software Serial-Ports
+Durch Einkommentieren der Präprozessor-Anweisung `#define SOFTWARE_SERIAL`
+wird neben den Hardware Serial-Ports des ESP32 nun auch ein per Software
+emulierter Serial-Port (benötigt bspw. für Betrieb des Simulators aufgezeichnete
+einem Arduino UNO) unterstützt.
